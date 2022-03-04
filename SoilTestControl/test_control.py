@@ -1,6 +1,9 @@
-import "../Motorshield/PiMotor.py" as PiMotor
+from sys import path
+path.append('../MotorShield')
+import PiMotor.py as PiMotor
 import time
 import RPi.GPIO as GPIO
+
 
 GPIO.setwarnings(False)
 
@@ -18,9 +21,6 @@ motorAll = PiMotor.LinkedMotors(m1,m2)
 
 def stop():
     print("Robot Stop ")
-    al.off()
-    af.off()
-    ar.off()
     motorAll.stop()
     time.sleep(2)
 
@@ -32,27 +32,23 @@ def forward():
 
 def back():
     print("Robot Moving Backward ")
-    af.off()
-    ab.on()
     motorAll.reverse(100)
     time.sleep(2)
 
 def left():
     print("Robot Moving Left ")
-    ab.off()
-    al.on()
-    m1.stop()
+    m1.forward(100)
     m2.stop()
-    m3.forward(100)
-    m4.forward(100)
     time.sleep(2)
 
 def right():
     print("Robot Moving Right ")
-    ar.on()
-    al.off()
-    m1.forward(100)
+    m1.stop()
     m2.forward(100)
-    m3.stop()
-    m4.stop()
     time.sleep(2)
+    
+stop()
+forward()
+right()
+left() 
+back()
