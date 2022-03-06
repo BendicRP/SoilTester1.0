@@ -5,8 +5,8 @@ Link to get python onto the raspberry py: https://pimylifeup.com/raspberry-pi-py
 QR Code: https://tutorial.cytron.io/2020/07/22/reading-qr-code-using-raspberry-pi-camera/  
 QR Code Generator: https://qr-code-generator.org/  
 OBE:  Make Batery Work  
-OBE:  Make bot Move
-IP:  WebApp
+OBE:  Make bot Move  
+IP:  WebApp  
 
 Below is pseudocode for the microcontroller  
 
