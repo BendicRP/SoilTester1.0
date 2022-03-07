@@ -1,30 +1,46 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
+
 <head>
-    <title>Read Text File</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/login.css">
+  <script src = "scripts/login.js"></script>
+  <title>Login</title>
 </head>
-  
+
 <body>
-    <input type="file" name="inputfile"
-            id="inputfile">
-    <br>
-   
-    <pre id="output"></pre>
-      
-    <script type="text/javascript">
-        document.getElementById('inputfile')
-            .addEventListener('change', function() {
-              
-            var fr=new FileReader();
-            fr.onload=function(){
-                document.getElementById('output')
-                        .textContent=fr.result;
-            }
-              
-            fr.readAsText(this.files[0]);
-        })
-    </script>
-</body>
+  <main>
+    <h1>Login</h1>
+	
+    <form id = "indexlogin">
+      <input id = "User" type="text" name="" value = "" placeholder="Enter Username">
+      <input id = "Pass" type="password" name="" value = "" placeholder = "Enter Password">
+    </form>
   
+	<button id = "login" onclick = "check()"> Login</button>
+  
+  </main>
+  
+  <script>
+  /*
+	function check () {
+	
+		var username = document.getElementById('User').value;
+	  	var password = document.getElementById('Pass').value;
+		
+		if( username == "user" && password == "admin")
+		{
+			alert("Correct Password");
+			location.href= "main.html";
+		}
+		else
+		{
+			alert("Wrong Password");
+		}
+  
+  }*/
+  </script>
+</body>
+
 </html>
