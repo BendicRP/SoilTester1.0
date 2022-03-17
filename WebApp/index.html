@@ -1,46 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/login.css">
-  <script src = "scripts/login.js"></script>
-  <title>Login</title>
-</head>
-
-<body>
-  <main>
-    <h1>Login</h1>
-	
-    <form id = "indexlogin">
-      <input id = "User" type="text" name="" value = "" placeholder="Enter Username">
-      <input id = "Pass" type="password" name="" value = "" placeholder = "Enter Password">
-    </form>
-  
-	<button id = "login" onclick = "check()"> Login</button>
-  
-  </main>
-  
-  <script>
-  /*
-	function check () {
-	
-		var username = document.getElementById('User').value;
-	  	var password = document.getElementById('Pass').value;
-		
-		if( username == "user" && password == "admin")
-		{
-			alert("Correct Password");
-			location.href= "main.html";
-		}
-		else
-		{
-			alert("Wrong Password");
-		}
-  
-  }*/
-  </script>
-</body>
-
+  <head>    
+    <title> Navigations Page </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./css/nav.css">
+  </head>  
+  <body>
+    <header>
+       <h1> Options </h1>
+	   <nav>
+	   <button type="button"><a href="datagetter.html">File Upload</a></button>
+	   <button type="button"><a href="index.html" id="nav">Options page</a></button>
+	   <button type="button"><a href="soiltester.html" id="soiltester">Soil Tester</a></button>
+	   <button type="button"><?PHP echo shell_exec("./python/.py");?> Run Python Script</button>
+	   </nav>
+    </header>    
+    <main> 
+    </main>  
+    <footer>
+       <p>Group10 -CEG4920- Spring 2022</p>
+    </footer>  
+  </body>
 </html>

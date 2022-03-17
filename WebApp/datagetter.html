@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <title> File Upload </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/scripts/datagetter.js"></script>
+    <link rel="stylesheet" href="./css/nav.css">
+<head>
+    <title>Results</title>
+</head>
+  
+<body>
+    <input type="file" accept="*,.txt"
+            id="data">
+   
+    <pre id="output"></pre>
+      
+    <script type="text/javascript">
+        document.getElementById("data")
+            .addEventListener("change", function() {
+              
+            var filegetter = new FileReader();
+            filegetter.onload=function(){
+                document.getElementById("output")
+                        .textContent=filegetter.result;
+            }
+              
+            filegetter.readAsText(this.files[0]);
+        })
+    </script>
+</body>
+  
+</html>
