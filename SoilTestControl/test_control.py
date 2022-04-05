@@ -44,8 +44,9 @@ def right():
     m2.forward(100)
     time.sleep(2)
     
-stop()
+
 forward()
 right()
 left() 
 back()
+stop()
