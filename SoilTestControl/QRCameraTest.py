@@ -1,6 +1,9 @@
-from picamera import picamera
-from time import sleep
-from PIL import Image
+#from picamera import picamera
+#from time import sleep
+#from PIL import Image
+import picamera
+import time
+import PIL
 import zbarlight
 
 camera = PiCamera()
