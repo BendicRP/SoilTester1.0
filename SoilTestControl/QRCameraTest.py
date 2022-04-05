@@ -14,5 +14,5 @@ while True:
         image = Image.open(image_file)
         image.load()
     sleep(5)
-    codes = zbarlight.scan_codes{['qrcode'], image}
+    codes = zbarlight.scan_codes(['qrcode'], image)
     print('QR codes: %s' % codes)
