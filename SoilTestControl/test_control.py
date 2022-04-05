@@ -1,6 +1,4 @@
-from sys import path
-path.append('../MotorShield')
-import PiMotor.py as PiMotor
+import PiMotor
 import time
 import RPi.GPIO as GPIO
 
@@ -26,7 +24,6 @@ def stop():
 
 def forward():
     print("Robot Moving Forward ")
-    af.on()
     motorAll.forward(100)
     time.sleep(2)
 
