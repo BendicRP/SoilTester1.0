@@ -29,9 +29,9 @@ def forward():
 
 def back():
     print("Robot Moving Backward ")
-    m1.reverse(100)
-    m2.reverse(100)
-    #motorAll.reverse(100)
+    #m1.reverse(100)
+    #m2.reverse(100)
+    motorAll.reverse(100)
     time.sleep(2)
 
 def left():
