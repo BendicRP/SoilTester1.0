@@ -2,15 +2,6 @@ import PiMotor
 import time
 import RPi.GPIO as GPIO
 
-
-GPIO.setwarnings(False)
-
-TRIG = 29
-ECHO = 31
-
-GPIO.setup(TRIG,GPIO.OUT)
-GPIO.setup(ECHO,GPIO.IN)
-
 m1 = PiMotor.Motor("MOTOR1",1)
 m2 = PiMotor.Motor("MOTOR2",1)
 #To drive all motors together
@@ -24,26 +15,26 @@ def stop():
 
 def forward():
     print("Robot Moving Forward ")
-    motorAll.forward(100)
+    motorAll.forward(25)
     time.sleep(2)
 
 def back():
     print("Robot Moving Backward ")
     #m1.reverse(100)
     #m2.reverse(100)
-    motorAll.reverse(100)
+    motorAll.reverse(25)
     time.sleep(2)
 
 def left():
     print("Robot Moving Left ")
-    m1.forward(100)
-    m2.stop()
+    m1.stop()
+    m2.forward(25)
     time.sleep(2)
 
 def right():
     print("Robot Moving Right ")
-    m1.stop()
-    m2.forward(100)
+    m1.forward(25)
+    m2.stop()
     time.sleep(2)
     
 
