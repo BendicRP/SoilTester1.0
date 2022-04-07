@@ -1,5 +1,0 @@
-Plant 1     0
-Plant 2     0
-Plant 3     0
-Plant 4     0
-Plant 5     0
