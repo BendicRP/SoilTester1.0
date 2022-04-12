@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-servoPIN = 4
+servoPIN = 2
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servoPIN, GPIO.OUT)
 
