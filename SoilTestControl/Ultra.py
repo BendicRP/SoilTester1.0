@@ -1,6 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
+GPIO.setmode(GIPO.BOARD)
+
 GPIO.setwarnings(False)
 
 TRIG = 29
@@ -36,9 +38,9 @@ while True:
 
     if avgDistance < 20:
         count=count+1
-        print("Stop")
+        print("stop")
         time.sleep(1)
-        print("Back")
+        print("back")
         time.sleep(2)
         if (count%4 ==1):
             print("right")
