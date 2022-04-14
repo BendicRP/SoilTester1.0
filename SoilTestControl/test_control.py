@@ -15,25 +15,25 @@ def stop():
 
 def forward():
     print("Robot Moving Forward ")
-    motorAll.forward(25)
+    motorAll.forward(100)
     time.sleep(2)
 
 def back():
     print("Robot Moving Backward ")
     #m1.reverse(100)
     #m2.reverse(100)
-    motorAll.reverse(25)
+    motorAll.reverse(100)
     time.sleep(2)
 
 def left():
     print("Robot Moving Left ")
     m1.stop()
-    m2.forward(25)
+    m2.forward(100)
     time.sleep(2)
 
 def right():
     print("Robot Moving Right ")
-    m1.forward(25)
+    m1.forward(100)
     m2.stop()
     time.sleep(2)
     
