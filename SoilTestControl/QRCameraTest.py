@@ -1,6 +1,9 @@
-from picamera import picamera
-from time import sleep
-from PIL import Image
+#from picamera import picamera
+#from time import sleep
+#from PIL import Image
+import picamera
+import time
+import PIL
 import zbarlight
 
 camera = PiCamera()
@@ -14,5 +17,5 @@ while True:
         image = Image.open(image_file)
         image.load()
     sleep(5)
-    codes = zbarlight.scan_codes{['qrcode'], image}
+    codes = zbarlight.scan_codes(['qrcode'], image)
     print('QR codes: %s' % codes)
