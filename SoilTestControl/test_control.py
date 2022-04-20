@@ -20,9 +20,17 @@ def forward():
 
 def back():
     print("Robot Moving Backward ")
+<<<<<<< HEAD
     #m1.reverse(100)
     #m2.reverse(100)
     motorAll.reverse(100)
+=======
+    m1.reverse(100)
+    m2.reverse(100)
+    #motorAll.reverse(25)
+    #m1.forward(25)
+    #m2.forward(25)
+>>>>>>> 7e62cbf7f9a4cfbf56922aa5a4d39c0e1f723b3f
     time.sleep(2)
 
 def left():
